@@ -1,4 +1,4 @@
-<br>><p>It's a flask app which shorts the long url into the small one.</p>
+<br><p>It's a flask app which shorts the long url into the small one.</p>
 
 Flask
 =====
