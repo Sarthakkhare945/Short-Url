@@ -52,7 +52,7 @@ Contributing
 ------------
 
 For guidance on setting up a development environment and how to make a
-contribution to Flask, see the `contributing guidelines`_.
+contribution to Flask, see the <a href='https://github.com/pallets/flask/blob/master/CONTRIBUTING.rst'>contributing guidelines</a>.
 
 
 
