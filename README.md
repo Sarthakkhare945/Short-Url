@@ -15,10 +15,6 @@ project layout. It is up to the developer to choose the tools and
 libraries they want to use. There are many extensions provided by the
 community that make adding new functionality easy.
 
-.. _WSGI: https://wsgi.readthedocs.io/
-.. _Werkzeug: https://werkzeug.palletsprojects.com/
-.. _Jinja: https://jinja.palletsprojects.com/
-
 
 Installing
 ----------
@@ -58,7 +54,7 @@ Contributing
 For guidance on setting up a development environment and how to make a
 contribution to Flask, see the `contributing guidelines`_.
 
-.. _contributing guidelines: https://github.com/pallets/flask/blob/master/CONTRIBUTING.rst
+
 
 
 Donate
@@ -69,7 +65,7 @@ it uses. In order to grow the community of contributors and users, and
 allow the maintainers to devote more time to the projects, `please
 donate today`_.
 
-.. _please donate today: https://palletsprojects.com/donate
+
 
 
 Links
