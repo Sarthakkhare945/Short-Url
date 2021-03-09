@@ -23,13 +23,13 @@ community that make adding new functionality easy.
 Installing
 ----------
 
-Install and update using `pip`_:
+Install and update using <a href='https://pip.pypa.io/en/stable/quickstart/'>pip</a>:
 
 .. code-block:: text
 
     $ pip install -U Flask
 
-.. _pip: https://pip.pypa.io/en/stable/quickstart/
+
 
 
 A Simple Example
