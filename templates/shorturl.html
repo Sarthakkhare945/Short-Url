@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{url_for('static', filename= 'shorturl.css')}}">
+
+    <title>Shortened Url</title>
+</head>
+
+<body>
+    
+
+
+    <h1 class="header">Shorten Url</h1>
+
+    <main>
+        <section id="content"><br><br>
+
+            <h1 class="headerShortUrl" ">Your shortened Url</h1>
+
+            <p class="headerShortUrlPara">Your shortened link is given below,share it in messages, texts, posts, websites and
+                other locations.</p>
+
+
+        </section>
+
+        <!-------------------------------------- URL BOX --------------------------------------->
+
+        <div id="urlbox">
+            <div class="shortenedurl">
+
+                <!--------------- Copy to Clipboard -------------------->
+
+                <script>
+                    function copyClipboard() {
+                        var elm = document.getElementById("divClipboard");
+
+                        if (window.getSelection) {
+                            // other browsers
+
+                            var selection = window.getSelection();
+                            var range = document.createRange();
+                            range.selectNodeContents(elm);
+                            selection.removeAllRanges();
+                            selection.addRange(range);
+                            document.execCommand("Copy");
+                        
+                        }
+                    }
+
+
+
+
+
+
+
+
+                </script>
+
+
+                <h1 id="divClipboard">http:127.0.0.1:5000/{{short_url_display}}</h1><br>
+                    <button onclick="copyClipboard()" class="CopyUrlBtn"> Copy Url</button>
+
+                    <p style="margin-top: 14px;">Copy the url and paste it on a new tab.</p>
+
+
+                    <p style="margin-top: -10px!important;">
+                        Create other <a href="http://127.0.0.1:5000/">shortened Url</a>
+                    </p>
+
+
+
+
+            </div>
+            <br>
+
+
+        </div>
+
+
+        <!-------------------------- SHARESECTION PART ------------------------>
+        <div class="sharebox">
+            <!-- ----Js For Share---- -->
+            <script>
+                // for facebook
+
+                function openFb() {
+                    window.open("https://facebook.com");
+                }
+                // for twitter
+
+                function openTwitter() {
+                    window.open("https://twitter.com");
+                }
+                // for insta
+
+                function openInsta() {
+                    window.open("https://instagram.com");
+                }
+                // for linkedin
+                
+                function openLinckedIn() {
+                    window.open("https://linkedin.com");
+                }
+
+
+            </script>
+            <h2 class="share">Share URL</h2>
+            <div class="shareLinks">
+                <li>
+                    <button class="facebook" onclick="openFb()">Facebook</button>
+                </li>
+                <li>
+                    <button class="twitter" onclick="openTwitter()">Twitter</button>
+                </li>
+                <li>
+                    <button class="instagram" onclick="openInsta()">Instagram</button>
+                </li>
+                <li>
+                    <button class="linkedin" onclick="openLinckedIn()">LinkedIn</button>
+                </li>
+
+            </div>
+
+
+        </div>
+
+
+        
+    
+
+        <!-- here footer is from basefooter.html -->
+    
+        {% extends 'basefooter.html' %}
+
+
+
+
+
+    
+
+
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+    
