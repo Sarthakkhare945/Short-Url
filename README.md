@@ -4,10 +4,10 @@
 Flask
 =====
 
-Flask is a lightweight `WSGI`_ web application framework. It is designed
+Flask is a lightweight <a href='https://wsgi.readthedocs.io/en/latest/'>WSGI</a> web application framework. It is designed
 to make getting started quick and easy, with the ability to scale up to
 complex applications. It began as a simple wrapper around <a href='https://werkzeug.palletsprojects.com'>Werkzeug</a>
-and `Jinja`_ and has become one of the most popular Python web
+and <a href='https://jinja.palletsprojects.com'>Jinja</a> and has become one of the most popular Python web
 application frameworks.
 
 Flask offers suggestions, but doesn't enforce any dependencies or
